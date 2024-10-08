@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Inscreva-se</title>
+        <style>
+            *{
+                text-align: center;
+            }
+            p{
+                margin: 10px 0;
+                padding-bottom: 10px;
+            }
+            body{
+                background-color: whitesmoke;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri,'Trebuchet MS', sans-serif;
+                font-size: 20px;
+            }
+            h1{
+                color: black;
+                font-size: 70px;
+            }
+
+            button{
+                background-color: green;
+                color: black;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="lugar_nenhum.php" method="post">
+            <h1>Cadastre-se no Sistema:</h1>
+            <h3>Insira as informações abaixo para entrar no sistema:</h3>
+            <p>
+                <label for="nome_cadastro">Nome completo:</label><br>
+                <input name="nome_cadastro" type="text" required>
+            </p>
+            <p>
+                <label for="email_cadastro">Endereço de e-mail:</label><br>
+                <input name="email_cadastro" type="email" placeholder="abcd@gmail.com" required><br>
+            </p>
+            <p>
+                <label for="senha_cadastro">Crie uma senha:</label><br>
+                <input name="senha_cadastro" type="password" required>
+            </p>
+            <p>
+                <label for="senha_cadastro">Digite a senha mais uma vez:</label><br>
+                <input name="senha_cadastro" type="password" required>
+            </p>
+            <p>
+            <label for="menu_cadastro">Qual o seu perfil?</label><br>
+                <select name="menu_cadastro" id="menu_cadastro" required>
+                    <option value="administrador">Administrador</option>
+                    <option value="coordenador">Coordenador</option>
+                    <option value="sepae">SEPAE</option>
+                    <option value="professor" selected>Professor</option>
+                    <option value="aluno">Aluno</option>
+                </select>
+            </p>
+            <p>
+                <br><button type="submit">Confirmar Cadastro!</button>
+            </p>
+        </form>
+    </body>
+</html>

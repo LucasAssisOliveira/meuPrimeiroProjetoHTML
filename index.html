@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+     <style>
+        *{
+            text-align: center;
+            }
+        p{
+            margin: 10px 0;
+            padding-bottom: 10px;
+            }
+        body{
+              background-color: whitesmoke;
+              font-family:'Gill Sans', 'Gill Sans MT', Calibri,'Trebuchet MS', sans-serif;
+              font-size: 20px;
+            }
+        h1{
+            color: black;
+            font-size: 70px;
+            }
+        button{
+                background-color: green;
+                color: black;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+    </style>
+</head>
+<body>
+    
+    <form action="login.php" method="post"> <!--Esse action é apenas um exemplo-->
+        <h1>Login:</h1>
+        <p>
+            <label for="login_usuario">Nome de Usuário:</label><br>
+            <input name="login_usuario" type="text" required/>
+        </p>
+        <p>
+            <label for="login_senha">Senha:</label><br>
+            <input name="login_senha" type="password" required/>
+        </p>
+        <p>
+            <label>
+                <input name="manterlogado" type="checkbox" /> Manter logado
+            </label>
+        </p>
+
+        <p> <button type="submit">Login</button> </p>
+        <p> <a href="https://lucasassisoliveira.github.io/aulas_sabado/cadastro.html">Ainda não tem conta?</a></p>
+        <p> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Esqueceu a senha?</a></p>
+    </form>
+</body>
+</html>
